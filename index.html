@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="bg-primary p-5">
+      <h2 class="text-center text-white">TEMPORARY DATA BASE</h2>
+    </div>
+    <div class="container-fluid main-sec">
+      <div class="row">
+        <div class="col-md-3 form-full">
+          <form name="db">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" class="form-control" placeholder="Enter your First Name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" class="form-control" required placeholder="Enter your Last Name" />
+            </div>
+
+            <div class="form-group">
+              <label for="ad1">Address line1</label>
+              <input type="text" id="ad1" class="form-control" required placeholder="Enter your Address line1" />
+            </div>
+
+            <div class="form-group">
+              <label for="ad2">Address line2</label>
+              <input type="text" id="ad2" class="form-control" required placeholder="Enter your Address line2" />
+            </div>
+
+            <div class="form-group">
+              <label for="pincode">Pin code</label>
+              <input type="text" id="pincode" class="form-control" required placeholder="Enter your Pin code" />
+            </div>
+
+            <div class="form-group" id="gender">
+              <p for="pincode">Gender</p>
+
+              <div class="form-check form-check-inline" required>
+                <input class="form-check-input" type="radio" id="inlineRadio1" name="gender" value="Male" />
+                <label class="form-check-label" for="gender">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="inlineRadio1" name="gender" value="Female" />
+                <label class="form-check-label" for="gender">Female</label>
+              </div>
+            </div>
+
+            <div class="form-group" id="choice" required>
+              <p for="pincode">Choice of Food: (Choose at least 2)</p>
+
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineRadio1" name="food" value="North Indian" />
+                <label class="form-check-label" for="choice">North Indian</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineRadio1" name="food" value="South Indian" />
+                <label class="form-check-label" for="choice">South Indian</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineRadio1" name="food" value="Chinese" />
+                <label class="form-check-label" for="choice">Chinese</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineRadio1" name="food" value="Japanese" />
+                <label class="form-check-label" for="choice">Japanese</label>
+              </div>
+              <div class="form-check form-check">
+                <input class="form-check-input" type="checkbox" id="inlineRadio1" name="food" value="Sea Food" />
+                <label class="form-check-label" for="choice">Sea Food </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="country">State</label>
+              <input type="text" id="state" class="form-control" required placeholder="Enter your State" />
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" id="country" class="form-control" required placeholder="Enter your Country" />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary col-12" id="getval">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Table Data -->
+        <div class="col-md-9">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Pin code</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Food</th>
+                <th scope="col">State</th>
+                <th scope="col">Country</th>
+              </tr>
+            </thead>
+            <tbody id="db_body">
+              <!-- <tr>
+								<th scope="row">1</th>
+								<td id="dis_fname">Avinesh T</td>
+								<td id="dis_add1">Vanikar street</td>
+								<td id="dis_add2">Dusi</td>
+								<td id="dis_pin">631702</td>
+								<td id="dis_gen">Male</td>
+								<td id="dis_list">South Indian</td>
+								<td id="state">Tamilnadu</td>
+								<td id="dis_country">India</td>
+							</tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
